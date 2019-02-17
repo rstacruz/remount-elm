@@ -2,11 +2,23 @@
   "name": "remount-elm",
   "version": "1.0.0",
   "description": "",
-  "main": "module.js",
+  "main": "dist/remount-elm.es5.js",
+  "module": "esm.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "rollup": "^1.2.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-babel-minify": "^7.0.0"
+  },
+  "dependencies": {
+    "remount": "<1"
+  }
 }
